@@ -1,0 +1,18 @@
+Here is a simple "Hello, World!" console application written in C#:
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
+The `using System;` directive allows the program to use types in the System namespace without qualifying the name of the type. The `Console` class is defined in this namespace and it's a built-in class from the .NET library used to work with console/terminal input and output.
+
+The `Main()` function is the entry point for your application. When the program is run, the Main function is what is first executed. In this case, it will print "Hello, World!" to the console. The code `Console.WriteLine("Hello, World!");` is used to write the string "Hello, World!" to the console window. 
+
+To run this code, save the file with a `.cs` extension (for example, `Program.cs`), compile it using the C# compiler (csc) i.e., `csc Program.cs`, and then run the generated `.exe` file in the console (for example, `Program.exe`). This process will be different if you are using an Integrated Development Environment (IDE) like Visual Studio, where you would press the start button or F5 to compile and run your program.
