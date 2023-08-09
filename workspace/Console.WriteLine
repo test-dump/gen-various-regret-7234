@@ -1,0 +1,16 @@
+[TestClass]
+public class ProgramTest
+{
+    [TestMethod]
+    public void TestSayHello()
+    {
+        using (var sw = new StringWriter())
+        {
+            Console.SetOut(sw);
+            Program.SayHello();
+
+            var result = sw.ToString().Trim();
+            Assert.AreEqual("Hello, World!", result);
+        }
+    }
+}
